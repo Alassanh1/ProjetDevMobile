@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AccueilActivity extends AppCompatActivity implements View.OnClickListener {
@@ -16,15 +15,14 @@ public class AccueilActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main); // le layout que tu m'as montré avec les deux boutons
+        setContentView(R.layout.activity_main); // Vérifie que c’est bien le bon layout
 
         initView();
     }
 
     private void initView() {
-        mButtonInscription = (Button) findViewById(R.id.button); // bouton "S'inscrire"
-        mButtonConnexion = (Button) findViewById(R.id.button2);   // bouton "Se connecter"
+        mButtonInscription = findViewById(R.id.button); // bouton "S'inscrire"
+        mButtonConnexion = findViewById(R.id.button2);   // bouton "Se connecter"
 
         mButtonInscription.setOnClickListener(this);
         mButtonConnexion.setOnClickListener(this);
