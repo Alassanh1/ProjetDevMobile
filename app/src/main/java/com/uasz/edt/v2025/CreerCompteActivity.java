@@ -10,7 +10,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.*;
 
-import androidx.activity.EdgeToEdge;
+//import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
@@ -50,7 +50,7 @@ public class CreerCompteActivity extends AppCompatActivity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
+        //EdgeToEdge.enable(this);
         setContentView(R.layout.activity_creer_compte);
 
         mOperationsGEDT = new OperationsGEDT();
