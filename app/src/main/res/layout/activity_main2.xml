@@ -145,15 +145,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="mot de passe oublie ?"
-            android:textAlignment="textEnd"
-            android:layout_marginEnd="32dp"
-            android:textColor="#2f3363"
-            android:layout_marginTop="8dp" />
 
 
         <androidx.appcompat.widget.AppCompatButton

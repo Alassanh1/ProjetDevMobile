@@ -175,7 +175,7 @@ public class CreerCompteActivity extends AppCompatActivity implements View.OnCli
                         Toast.makeText(this, "Compte créé avec succès", Toast.LENGTH_LONG).show();
                         startActivity(new Intent(this, MainActivity2.class));
                     } else {
-                        Toast.makeText(this, "Erreur : le compte n'a pas pu être créé", Toast.LENGTH_LONG).show();
+                        Toast.makeText(this, "Erreur : le compte existe déjà ou les données sont invalides", Toast.LENGTH_LONG).show();
                     }
                 } else {
                     Toast.makeText(this, R.string.erreur_internet_off, Toast.LENGTH_LONG).show();
